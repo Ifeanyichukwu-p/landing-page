@@ -2,6 +2,9 @@ body {
  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  margin: 0;
  min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ flex: 1;
 }
 
 .header {
@@ -12,7 +15,7 @@ body {
  color: white;
  justify-content: space-between;
  justify-content: space-around;
- height: 4vh;
+ height: 10vh;
  
 }
 
@@ -21,6 +24,13 @@ body {
  gap: 16px;
  flex-direction: row;
  align-items: center;
+ list-style: none;
+ 
+}
+
+a {
+ text-decoration: none;
+ color: white;
 }
 
 .logo {
@@ -35,7 +45,7 @@ body {
  display: flex;
  flex-direction: row;
  background: #1F2937;
- height: 40vh;
+ height: 65vh;
 }
 
 .box-1 {
@@ -56,7 +66,7 @@ width: 45%;
 
 button {
  background: #3882F6;
- width: 40%;
+ width: 120px;
  align-self: center;
  border-radius: 25px;
  color: white;
@@ -76,17 +86,40 @@ button {
 .block-2 {
  display: flex;
  flex-direction: column;
- height: 20vh;
+ height: 65vh;
+}
+.box-4{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ height: 15vh;
+ color: #1F2937;
+ font-size: 32px;
+ font-weight: bolder;
 }
 .box-5 {
  display: flex;
+ flex-direction: row;
+ justify-content: center;
+
  
+}
+.card-container {
+ display: flex;
+ flex-direction: column;
+ height: 300px;
+ width: 180px;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
 }
 
 .card {
- border: 2px solid brown;
- height: 10vh;
- width: 200px;
+ border: 4px solid #3882F6;
+ height: 150px;
+ width: 150px;
+ border-radius: 25px;
 }
 
 
@@ -104,4 +137,64 @@ button {
  width: 50%;
  align-self: center;
  
+}
+
+.block-3 {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 65vh;
+ background: #e5e7eb;
+}
+
+.box-7 {
+ display: flex;
+ height: 32vh;
+ width: 60%;
+ font-size: 36px;
+ font-style: italic;
+ color: #1F2937;
+}
+
+.box-8 {
+ display: flex;
+ height: 10vh;
+ justify-content: flex-end;
+ width: 60%;
+ font-size: 36px;
+ font-weight: bold;
+ color: #1F2937;
+}
+
+.block-4 {
+ display: flex;
+ flex-direction: row;
+ height: 50vh;
+ justify-content: center;
+ align-items: center;
+}
+
+.box-9 {
+ height: 25vh;
+ width: 80%;
+ justify-content: center;
+ justify-content: space-around;
+ display: flex;
+ background:#3882F6;
+ border-radius: 15px;
+}
+
+.box-10 {
+ color: white;
+}
+
+.footer {
+ display: flex;
+ height: 15vh;
+ background: #1F2937;
+ color: white;
+ justify-content: center;
+ align-items: center;
+ font-size: 20px;
 }
